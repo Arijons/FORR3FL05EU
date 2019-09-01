@@ -3,9 +3,10 @@ Leikjaforritun II
 
 Leikurinn minn heitir Skylduverk sem er orðaleikur með "Call of Duty".
 Þetta er fyrstu prsónuleikur þar sem leikmaðurinn gengur um með byssuna sína í yfirgefnum húsum og berst við óvinina.
-Ég hef valið að hafa ekki of mikið af aukahlutum eða flækjum.  Ég ætla að reyna að láta leikinn virka almennilega fyrst og
-láta baráttuna við óvinina verða raunverulega.  Ég vil láta leikmennina fara eðlilega um landsvæðið og framhjá hindrunum eins 
-og þær væru raunverulega.
+Ég ætla ekki að hafa of mikið af aukahlutum eða flækjum í byrjun.  Ég ætla að reyna að láta leikinn virka almennilega fyrst og
+láta baráttuna við óvinina verða raunverulega, byssu sár.  Ég vil láta leikmennina fara eðlilega um landsvæðið og framhjá hindrunum eins 
+og þær væru í alvöru.  Ég vil líka að óvinirnir virki og reyni að drepa leikmanninn.
+
 Það verður bara einn skjár í 3d unity sem leikurinn verður til að byrja með.
 
 Þegar þetta er farið að virka ætla ég að búa til stigatöflu, lífatöflu, og bæta við hlutum eing og skordýrum, hundum og fleira.
@@ -16,4 +17,4 @@ Kannski geta leikmenn farið inn í hús og fleira.
 
 Svo enda ég á að setja inn hljóðinn og tónlist.
 
-likur á wiki: [wiki linkur](https://github.com/Arijons/FORR3FL05EU/wiki)
+linkur á wiki: [wiki linkur](https://github.com/Arijons/FORR3FL05EU/wiki)
