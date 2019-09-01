@@ -1,5 +1,5 @@
 # FORR3FL05EU
-## --- Leikjaforritun II 
+## Leikjaforritun II 
 
 Leikurinn minn heitir Skylduverk sem er orðaleikur við  "Call of Duty" sem ég þekki vel.
 Þetta er fyrstu prsónuleikur þar sem leikmaðurinn gengur um með byssuna sína í yfirgefnum húsum og berst við óvinina.
