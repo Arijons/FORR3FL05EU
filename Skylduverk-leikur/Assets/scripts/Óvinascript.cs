@@ -6,8 +6,6 @@ public class Óvinascript : MonoBehaviour
 {   // Í upphafi er heilsan óvinarins 10 
     public int HeilsaÓvinar = 10;
 
-    
-
     // þetta fall  sem minkar heilsu óvinarinns um magnmeiðsla  
     void MinnkaHeilsu(int MagnMeiðsla)
     { 
