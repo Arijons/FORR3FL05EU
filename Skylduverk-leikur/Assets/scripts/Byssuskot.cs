@@ -14,6 +14,7 @@ public class Byssuskot : MonoBehaviour
             gunsound = GetComponent<AudioSource>();
             gunsound.Play();
             GetComponent<Animation>().Play("Byssuskot");
+            Skotfæri.CurrentAmmo -= 1;
         }
     }
 }
