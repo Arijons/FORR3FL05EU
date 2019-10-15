@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class AmmoPickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+
+    // Þegar leikmaðurinn rekstá skotfærageymsluna þá hækkar magnið á skotfærum um 10 stig
     void OnTriggerEnter (Collider col) 
     {
         Skotfæri.CurrentAmmo += 10;
