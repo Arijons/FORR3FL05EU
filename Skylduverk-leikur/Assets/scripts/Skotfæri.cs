@@ -11,7 +11,7 @@ public class Skotfæri : MonoBehaviour
 
   
 
-    // Update is called once per frame
+    // skotfæra er alltaf uppfærður reglulega
     void Update()
     {
         InternalAmmo = CurrentAmmo;
