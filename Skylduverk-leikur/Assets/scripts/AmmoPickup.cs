@@ -10,7 +10,17 @@ public class AmmoPickup : MonoBehaviour
     void OnTriggerEnter (Collider col) 
     {
         ammoSound.Play();
-        Skotfæri.CurrentAmmo += 10;
-        this.gameObject.SetActive(false);
+        if (Skotfæri.LoadedAmmo == 0)
+        {
+            Skotfæri.LoadedAmmo += 10;
+            this.gameObject.SetActive(false);
+
+        }
+        else
+        {
+
+            Skotfæri.CurrentAmmo += 10;
+            this.gameObject.SetActive(false);
+        }
     }
 }

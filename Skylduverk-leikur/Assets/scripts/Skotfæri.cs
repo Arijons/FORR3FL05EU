@@ -9,12 +9,16 @@ public class Skotfæri : MonoBehaviour
     public int InternalAmmo;
     public GameObject AmmoDisplay;
 
-  
+    public static int LoadedAmmo;
+    public int InternalLoaded;
+    public GameObject LoadedDisplay;
 
     // skotfæra er alltaf uppfærður reglulega
     void Update()
     {
         InternalAmmo = CurrentAmmo;
+        InternalLoaded = LoadedAmmo;
+        LoadedDisplay.GetComponent<Text>().text = "" + LoadedAmmo;
         AmmoDisplay.GetComponent<Text>().text = "" + InternalAmmo;
 
     }
