@@ -9,19 +9,22 @@ public class MiðariAnim : MonoBehaviour
     public GameObject LeftCurs;
     public GameObject RightCurs;
 
+    
+
+    void Start()
+    {
+        StartCoroutine(Bið());
+    }
     IEnumerator Bið()
     {
         yield return new WaitForSeconds(0.1F);
-    }
-
-    void WA()
-    {
         UpCurs.GetComponent<Animator>().enabled = false;
         DownCurs.GetComponent<Animator>().enabled = false;
         LeftCurs.GetComponent<Animator>().enabled = false;
         RightCurs.GetComponent<Animator>().enabled = false;
-
     }
+
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -30,12 +33,10 @@ public class MiðariAnim : MonoBehaviour
             DownCurs.GetComponent<Animator>().enabled = true;
             LeftCurs.GetComponent<Animator>().enabled = true;
             RightCurs.GetComponent<Animator>().enabled = true;
-
             Bið();
-            WA();
-       
         }
     }
+
 
 }
 
