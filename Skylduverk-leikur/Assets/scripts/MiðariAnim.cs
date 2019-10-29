@@ -11,10 +11,7 @@ public class MiðariAnim : MonoBehaviour
 
     
 
-    void Start()
-    {
-        StartCoroutine(Bið());
-    }
+
     IEnumerator Bið()
     {
         yield return new WaitForSeconds(0.1F);
@@ -29,6 +26,7 @@ public class MiðariAnim : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            StartCoroutine(Bið());
             UpCurs.GetComponent<Animator>().enabled = true;
             DownCurs.GetComponent<Animator>().enabled = true;
             LeftCurs.GetComponent<Animator>().enabled = true;

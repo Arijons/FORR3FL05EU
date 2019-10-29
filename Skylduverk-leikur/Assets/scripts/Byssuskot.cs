@@ -6,10 +6,7 @@ public class Byssuskot : MonoBehaviour
 { public AudioSource gunsound;
   public GameObject Flash;
 
-    void Start()
-    {
-        StartCoroutine (Flashoff());
-    }
+ 
 
 
     // Þetta fall er updatad í hverjum ramma 
@@ -17,9 +14,10 @@ public class Byssuskot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {   // Ef ýtið er á skot þá er hvellurinn spilaður og animation sem lyftar byssuni upp og niður 
+            StartCoroutine(Flashoff());
             gunsound = GetComponent<AudioSource>();
             gunsound.Play();
-            Flash.SetActive(true);
+            this.Flash.SetActive(true);
             Flashoff();
             GetComponent<Animation>().Play("Byssuskot");
             Skotfæri.LoadedAmmo -= 1;
@@ -30,7 +28,7 @@ public class Byssuskot : MonoBehaviour
     IEnumerator Flashoff()
     {
         yield return new WaitForSeconds(0.1F);
-        Flash.SetActive(false);
+        this.Flash.SetActive(false);
     }
 
 
