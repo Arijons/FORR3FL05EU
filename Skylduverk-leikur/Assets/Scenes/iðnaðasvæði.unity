@@ -684,8 +684,9 @@ GameObject:
   - component: {fileID: 129369046}
   - component: {fileID: 129369045}
   - component: {fileID: 129369044}
+  - component: {fileID: 129369048}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: TakaUppniumill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,6 +764,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &129369048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129369043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc75c18cd08971844b2d436109e71e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  TextDisplay: {fileID: 0}
+  FakeGun: {fileID: 1826252129}
+  RealGun: {fileID: 21227645}
+  AmmoDisplay: {fileID: 2079751085}
 --- !u!1 &134186452
 GameObject:
   m_ObjectHideFlags: 0
@@ -10892,6 +10910,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
+--- !u!1 &1826252129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 6f8ee9e57f0ae87429c40e77c8b75822,
+    type: 3}
+  m_PrefabInstance: {fileID: 1826252128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1826252130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826252129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc75c18cd08971844b2d436109e71e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  TextDisplay: {fileID: 0}
+  FakeGun: {fileID: 0}
+  RealGun: {fileID: 0}
+  AmmoDisplay: {fileID: 0}
 --- !u!1001 &1830187797
 PrefabInstance:
   m_ObjectHideFlags: 0
