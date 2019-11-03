@@ -18,59 +18,49 @@ public class Hlaða9mm : MonoBehaviour
         ClipCount = Skotfæri.LoadedAmmo;
         ReserveCount = Skotfæri.CurrentAmmo;
 
-        if (ReserveCount == 0 ) {
+        if (ReserveCount == 0) {
+            ReloadAvailable = 0;
+        }
+        else
+        {
+            ReloadAvailable = 10 - ClipCount;
         }
 
-
-
+        if (Input.GetButtonDown("Reload"))
+        {
+            if (ReloadAvailable >= 1)
+            {
+                if (ReserveCount <= ReloadAvailable)
+                {
+                    Skotfæri.LoadedAmmo += ReserveCount;
+                    Skotfæri.CurrentAmmo -= ReserveCount;
+                    ActionReload();
+                }
+                else
+                {
+                    Skotfæri.LoadedAmmo += ReloadAvailable;
+                    Skotfæri.CurrentAmmo -= ReloadAvailable;
+                    ActionReload();
+                }
+            }
+        }
+        StartCoroutine(EnableScripts());
 
     }
+    IEnumerator EnableScripts()
+    {
+        yield return new WaitForSeconds(1.1f);
+        this.GetComponent<Byssuskot>().enabled = true;
+        CrossObject.SetActive(true);
+        MechanicsObject.SetActive(true);
+    }
+    void ActionReload()
+    {
+        this.GetComponent<Byssuskot>().enabled = false;
+        CrossObject.SetActive(false);
+        MechanicsObject.SetActive(false);
+        ReloadSound.Play();
+        GetComponent< Animation > ().Play("Hlaða9mm");
+    }
+
 }
-/*
- * //Jimmy Vegas Unity 5 Tutorial
-//This script will reload your handgun
-
-
-function Update () {
-
-
-	if (ReserveCount == 0) {
-		ReloadAvailable = 0;
-	}
-	else {
-		ReloadAvailable = 10 - ClipCount;
-	}
-
-	if(Input.GetButtonDown("Reload")) {
-		if (ReloadAvailable >= 1) {
-			if (ReserveCount <= ReloadAvailable) {
-				GlobalAmmo.LoadedAmmo += ReserveCount;
-				GlobalAmmo.CurrentAmmo -= ReserveCount;
-				ActionReload();
-			}
-			else {
-				GlobalAmmo.LoadedAmmo += ReloadAvailable;
-				GlobalAmmo.CurrentAmmo -= ReloadAvailable;
-				ActionReload();
-			}
-		}
-	EnableScripts();
-
-	}
-}
-
-function EnableScripts () {
-	yield WaitForSeconds (1.1);
-			this.GetComponent("GunFire").enabled=true;
-			CrossObject.SetActive(true);
-			MechanicsObject.SetActive(true);
-}
-
-function ActionReload () {
-	this.GetComponent("GunFire").enabled=false;
-	CrossObject.SetActive(false);
-	MechanicsObject.SetActive(false);
-	ReloadSound.Play();
-	GetComponent.<Animation>().Play("HandgunReload");
-}
-*/
