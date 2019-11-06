@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TakaUpp9mm : MonoBehaviour
+public class TakaUppAK74 : MonoBehaviour
 {
     public float TheDistance = PlayerCasting.DistanceFromTarget;
     public GameObject TextDisplay;
