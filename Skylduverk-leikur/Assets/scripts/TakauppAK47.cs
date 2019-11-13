@@ -11,13 +11,9 @@ public class TakauppAK47 : MonoBehaviour
     public GameObject RealGun;
     public GameObject AmmoDisplay;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
+ 
 
-    }
-
-    // Update is called once per frame
+    // Í þessu scripti er riffillinn tekin upp þegar ýtt er á E
     private void Update()
     {
         TheDistance = PlayerCasting.DistanceFromTarget;

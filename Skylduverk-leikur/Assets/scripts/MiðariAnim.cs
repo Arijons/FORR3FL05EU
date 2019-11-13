@@ -11,7 +11,7 @@ public class MiðariAnim : MonoBehaviour
 
     
 
-
+    // Hér er beðið í 0.1 sekúndu svo dregst miðarinn saman
     IEnumerator Bið()
     {
         yield return new WaitForSeconds(0.1F);
@@ -21,9 +21,9 @@ public class MiðariAnim : MonoBehaviour
         RightCurs.GetComponent<Animator>().enabled = false;
     }
 
-
+    // Hér er checkað hvort það sé búið að skjóta
     void Update()
-    {
+    {   
         if (Input.GetButtonDown("Fire1"))
         {
             StartCoroutine(Bið());
