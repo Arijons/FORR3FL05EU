@@ -28,7 +28,7 @@ public class Byssumeiðsli : MonoBehaviour
                 {   // athuga hvað óvinur margar metra frá byssunni með RaycastHit skipun 
                     FjarlægðÓvinar = Skot.distance;
                     if (FjarlægðÓvinar < ByssaDrifur)
-                    {   // ef byssan er nóg nálægt þá lækkar heilsan hjá óvinum um 5
+                    {   // ef byssan er nógu nálægt þá lækkar heilsan hjá óvinum um 5
                         Skot.transform.SendMessage("MinnkaHeilsu", MagnMeiðsla);
                     }
                 }

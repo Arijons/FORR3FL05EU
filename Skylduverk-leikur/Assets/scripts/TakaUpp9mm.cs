@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TakaUppAK74 : MonoBehaviour
+public class TakaUpp9mm : MonoBehaviour
 {
     public float TheDistance = PlayerCasting.DistanceFromTarget;
     public GameObject TextDisplay;
@@ -20,7 +20,7 @@ public class TakaUppAK74 : MonoBehaviour
     private void Update()
     {
         TheDistance = PlayerCasting.DistanceFromTarget;
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("taka upp 9mm"))
         {
             if (TheDistance <= 2)
             {

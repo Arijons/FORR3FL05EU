@@ -17,7 +17,7 @@ public class TakauppAK47 : MonoBehaviour
     private void Update()
     {
         TheDistance = PlayerCasting.DistanceFromTarget;
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("taka upp riffil"))
         {
             if (TheDistance <= 2)
             {
