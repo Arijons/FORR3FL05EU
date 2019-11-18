@@ -13,7 +13,7 @@ public class Byssuskot : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
-        {   // Ef ýtið er á skot þá er hvellurinn spilaður og animation sem lyftar byssuni upp og niður 
+        {   // Ef ýtið er á skot þá er hvellurinn spilaður og animation sem lyftir byssuni upp og niður 
             gunsound = GetComponent<AudioSource>();
             gunsound.Play();
             this.Flash.SetActive(true);

@@ -21,7 +21,7 @@ public class TakauppAK47 : MonoBehaviour
         {
             if (TheDistance <= 2)
             {
-                TakaUpp9mmByssu();
+                TakaUppAk74();
             }
         }
     }
@@ -40,9 +40,9 @@ public class TakauppAK47 : MonoBehaviour
         TextDisplay.GetComponent<GUIText>().text = "";
     }
 
-    private void TakaUpp9mmByssu()
+    private void TakaUppAk74()
     {
-        transform.position = new Vector3(0, -1000, 0);
+        transform.position = new Vector3(0, -1, 0);
         FakeGun.SetActive(false);
         RealGun.SetActive(true);
         AmmoDisplay.SetActive(true);
