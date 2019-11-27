@@ -42,7 +42,7 @@ public class TakauppAK47 : MonoBehaviour
 
     private void TakaUppAk74()
     {
-        transform.position = new Vector3(0, -1, 0);
+        transform.position = new Vector3(0, 0, -1);
         FakeGun.SetActive(false);
         RealGun.SetActive(true);
         AmmoDisplay.SetActive(true);
