@@ -8,11 +8,11 @@ public class GlobalHeilsa : MonoBehaviour
 
 {
 
-    public static int PlayerHealth = 10;
+    public static int PlayerHealth = 5;
     public int InternalHealth;
     public GameObject HeilsuMiði;
 
-    void Update() // ef helisan er == 0 er farið beint í game over senuna
+    void Update() // ef heilsan er == 0 er farið beint í game over senuna
 
     {
         InternalHealth = PlayerHealth;
